@@ -1,0 +1,105 @@
+RESPUESTAS - CLASE 12 - ARQUITECTURA DE SOFTWARE
+Un sistema que responde con documentos
+Universidad Jorge Tadeo Lozano - 2026-2
+
+Nombre:  Esteban Rueda, Nicolas Eraso
+Grupo:  1
+Generado: 20/10/2026, 7:46:57 p. m.
+================================================================
+
+
+################################################################
+## Parte A · El sistema guiado
+################################################################
+
+--- 2 La forma de un documento ---
+Escriba tres cifras concretas que encontró en ese documento: 30 días de garantía desde la fecha de tostion
+
+--- 4 Primera pregunta ---
+Puntaje del primer documento del ranking: 1.00
+Archivo que quedó de primero: documentos\01-devoluciones.txt
+¿Cuál chat de IA está usando?: Gemini
+Pegue aquí la respuesta que le dio el chat: Tienes 8 días calendario siguientes a la compra para devolver un café en grano o molido.   Para que la devolución sea aceptada, deben cumplirse las siguientes condiciones: El empaque debe estar sin abrir.   Debes presentar la factura de compra.   El producto no debe ser una edición de temporada ni haber sido vendido con descuento de liquidación.   (Nota: En caso de que se trate de una garantía por defecto de frescura en café en grano —como olor a humedad o producto rancio—, cuentas con un plazo de 30 días desde la fecha de tueste impresa en el empaque para solicitar el reemplazo sin costo).
+El otro chat: (sin responder)
+Qué le respondió a él: (sin responder)
+¿Dijeron lo mismo?: (sin responder)
+
+--- 5 Segunda pregunta ---
+Puntaje del primer documento: 0.67
+Archivo que ganó: documentos\01-devoluciones.txt
+Pegue aquí la respuesta, tal cual como le salió: No. La política de devoluciones de Café Altamar aplica únicamente para café en grano y café molido.
+
+--- 6 La conversación ---
+¿Qué respondió su chat en la pregunta 2?: Que el molino no está cubierto
+Si marcó «otra cosa», ¿cuál?: (sin responder)
+¿Qué línea del código escribimos nosotros para evitar ese resultado?: (sin responder)
+
+--- 7 La segunda versión ---
+¿Qué pasó esta vez?: (sin responder)
+
+--- 8 Cómo se fabrica una trampa ---
+¿Qué documento escogió?: (sin responder)
+¿De qué habla ese documento?: (sin responder)
+Su pregunta trampa: (sin responder)
+¿Qué puntaje sacó?: (sin responder)
+¿Por qué el documento que ganó NO responde esa pregunta?: (sin responder)
+
+--- 9 El banco de pruebas ---
+Acertó ___ de 10: (sin responder)
+Se calló pero la respuesta SÍ estaba · ___ veces: (sin responder)
+Respondió pero la respuesta NO estaba · ___ veces: (sin responder)
+Con umbral 0.20 · bloquea ___ buenas y deja pasar ___ malas: (sin responder)
+Con umbral 0.70 · bloquea ___ buenas y deja pasar ___ malas: (sin responder)
+En una frase: ¿qué le pasa al sistema cuando sube el umbral?: (sin responder)
+¿En qué puntaje quedaron empatadas?: (sin responder)
+¿Cuántas eran, y cuántas de esas SÍ estaban en los documentos?: (sin responder)
+Entonces, ¿por qué ningún umbral puede separarlas?: (sin responder)
+¿Su pregunta salió «ok» o «MAL»?: (sin responder)
+¿Por qué? Mire su puntaje contra el umbral de 0.70: (sin responder)
+
+--- 10 El correo, en una frase ---
+Sin palabras técnicas: nada de «umbral», «puntaje» ni «algoritmo». Como se lo explicaría a alguien de recursos humanos.: (sin responder)
+
+
+################################################################
+## Parte B · El taller
+################################################################
+
+--- B.3 Su negocio y su trampa ---
+¿Cuál es su negocio?: sistema de venta de hardware enVidia
+Los 5 documentos que escribieron (nombres): Devoluciones, Domicilios, Garantía, Programa de actualización, soporte
+Su pregunta trampa: enVidia realiza envios a medellin?
+Puntaje que sacó: 0.80
+Documento que ganó: 02-domicilios
+¿Por qué ese documento NO responde la pregunta?: El documento nunca menciona detalles de envíos a otras ciudades, solo habla de las especificaciones de envíos en Bogotá
+
+--- B.4 Los dos modelos ---
+Modelo 1 · cuál es: Chatgpt
+Modelo 1 · qué respondió: La evidencia disponible solo menciona envíos a la ciudad de Bogotá (con envío gratuito en compras superiores a $2,000) y no especifica si realizan envíos a Medellín.
+Modelo 2 · cuál es: Gemini
+Modelo 2 · qué respondió:
+   Según la política de envíos disponible, el envío gratuito está establecido únicamente para pedidos en Bogotá superiores a $2.000. No contamos con información confirmada sobre envíos gratuitos a Medellín.
+   
+   Te recomendamos consultar directamente con el servicio al cliente de enVidia para confirmar las tarifas y condiciones de envío a Medellín.
+¿Se parecieron las dos respuestas?: Sí, casi iguales
+
+--- B.5 El banco y los umbrales ---
+Sus 8 preguntas, una por línea:
+   ¿Cuántos días tengo para devolver una tarjeta gráfica?
+   ¿La garantía me cubre si se quema por usar fuente genérica?
+   ¿Cuánto cuesta el envío de una RTX 5090 a Bogotá?
+   ¿A qué correo debo escribir si la caja llega golpeada?
+   ¿Por qué medio me devuelven el dinero de la devolución?
+   ¿Tienen tiendas físicas en Cali para recoger componentes?
+   ¿Venden teclados mecánicos, ratones o monitores gamer?
+   ¿Puedo pagar mi pedido usando criptomonedas o Bitcoin?
+Umbral bajo · bloquea ___ buenas, deja pasar ___ malas: Umbral bajo · bloquea 0 buenas, deja pasar 2 malas
+Umbral medio · bloquea ___ buenas, deja pasar ___ malas: Umbral medio · bloquea 0 buenas, deja pasar 0 malas
+Umbral alto · bloquea ___ buenas, deja pasar ___ malas: Umbral alto · bloquea 2 buenas, deja pasar 0 malas
+
+--- B.6 El correo al jefe ---
+El número que escogimos (umbral): 0.70
+Por qué lo pusimos ahí — qué prefiere nuestro negocio: ¿callarse cuando no está seguro, o responder algo aunque a veces se equivoque?: buscamos un alto índice de coincidencias para que el sistema logre detectar términos específicos del negocio, como CPU, tarjeta gráfica o overclocking, pero también que al no usar esos términos sea posible llegar a un resultado satisfactorio
+Qué nos cuesta esa decisión — una pregunta real que el sistema SÍ podía responder y que ahora se queda callado: en casos donde el usuario no haga uso de lenguaje técnico del negocio y las palabras que use difieran mucho de las usadas en el corpus no se encontraría una respuesta a pesar de que la información está disponible
+Qué pasaría si lo bajáramos — una pregunta real que empezaría a contestarse mal: Bajar el umbral daría pie a que preguntas para las cuales no se tiene información sean respondidas incorrectamente, llevando a que el modelo alucine o desinforme, ya que el requerimiento de coincidencia entre las palabras es más flexible
+La frase de cierre para su jefe: por qué esto no se «arregla» subiendo o bajando el número: El objetivo no es modificar el umbral hasta llegar a un resultado esperado para preguntas pre formuladas, hay que modificar el corpus para que haga uso de vocabulario usado por los clientes, facilitando el hallazgo de coincidencias y la información sea recuperada del documento correcto

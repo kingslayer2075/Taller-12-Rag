@@ -1,0 +1,7 @@
+GARANTÍA DE COMPONENTES - ENVIDIA HARDWARE STORE
+Nuestros procesadores y tarjetas de video tienen una garantía de 24 meses por defectos de fábrica.
+La póliza no cubre daños si el componente se quema por usar una fuente genérica de energía.
+Es obligatorio usar fuentes de poder certificadas (80 Plus) para evitar cortos eléctricos.
+Tenga en cuenta que la garantía se pierde si el usuario le hace overclocking a la CPU o GPU.
+El overclocking extremo altera las temperaturas de fábrica y anula el soporte oficial de la marca.
+Para tramitarla, es obligatorio presentar la factura con el número de serie inalterado.
